@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script> -->
+</head>
+
+<body>
+    <!-- <input type="text" id="inpu1"><br>
+    <input type="text" id="inpu2"><br>
+    <input type="text" id="inpu3"><br>
+    <input type="text" id="inpu4"><br>
+    <button type="submit" id="sub" onclick="cli()">submit</button> -->
+    <div class="container">
+
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm" class="col-md">
+            <div class="form-row" style="margin-bottom: 20px;">
+                <div class="col">
+                    <label for="first_name">First Name</label>
+                    <input type="text" class="form-control fill" placeholder="Enter First name" id="first_name">
+                </div>
+                <div class="col">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" class="form-control fill" placeholder="Enter Last name" id="last_name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control fill" id="email" placeholder="Enter Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="pass">Password</label>
+                    <input type="password" class="form-control fill" id="pass" placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="add">Address</label>
+                <input type="text" class="form-control fill" id="add" placeholder="Enter Address">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control fill" id="city" placeholder="Enter Your City">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="state">State</label>
+                    <select id="state" class="form-control fill">
+                        <option selected>Choose...</option>
+                        <option>Bihar</option>
+                        <option>Uttar Pradesh</option>
+                        <option>Jharkhand</option>
+                        <option>West Bengal</option>
+                        <option>Assam</option>
+                        <option>Orrissa</option>
+                        <option>Chattisgarh</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="pin">PIN</label>
+                    <input type="text" class="form-control fill" id="pin">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agree">
+                    <label class="form-check-label" for="agree">
+                        Agree to our terms and conditions.
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn-me">Register</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

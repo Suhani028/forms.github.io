@@ -1,0 +1,39 @@
+body {
+    background-image: url("2.jpg");
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: #73cc9a;
+    margin-top: 20px;
+
+}
+.alert {
+    display: none;
+}
+.btn-me {
+    height: 43px;
+    width: 100px;
+    background-color: #091d0a;
+    border-radius: 25px;
+    border: 2px solid #091d0a;
+    color: #54ff9f;
+    font-size: 18px;
+}
+
+.btn-me:hover {
+    background-color: #0c2f42;
+    border: 2px solid #0c2f42;
+    opacity: 0.5;
+}
+
+.fill {
+    background-color: #041505;
+    opacity: 0.25;
+    color: #ffb5b5;
+}
+
+.fill:hover {
+    background-color: black;
+    color: aqua;
+}
