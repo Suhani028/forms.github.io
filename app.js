@@ -36,7 +36,7 @@ function submitForm (e){
 //   var agree = getInputVal('agree');
 
   // Save message
-  saveMessage(firstName, lastName, email, pass, address, city, state, pin, agree);
+  saveMessage(firstName, lastName, email, pass, address, /*city, state, pin, agree*/);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
