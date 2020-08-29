@@ -30,10 +30,10 @@ function submitForm (e){
   var email = getInputVal('email');
   var pass = getInputVal('pass');
   var address = getInputVal('add');
-  var city = getInputVal('city');
-  var state = getInputVal('state');
-  var pin = getInputVal('pin');
-  var agree = getInputVal('agree');
+//   var city = getInputVal('city');
+//   var state = getInputVal('state');
+//   var pin = getInputVal('pin');
+//   var agree = getInputVal('agree');
 
   // Save message
   saveMessage(firstName, lastName, email, pass, address, city, state, pin, agree);
@@ -56,17 +56,17 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(firstName, lastName, email, pass, address, city, state, pin, agree){
+function saveMessage(firstName, lastName, email, pass, address, /*city, state, pin, agree*/){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     "First Name": firstName, 
     "Last Name": lastName, 
     Email: email, 
-    Password: pass, 
-    Address: address, 
-    City: city, 
-    State: state, 
-    PIN: pin, 
-    Agree: agree
+    Mobile: pass, 
+    How_know_me: address, 
+//     City: city, 
+//     State: state, 
+//     PIN: pin, 
+//     Agree: agree
   });
 }
